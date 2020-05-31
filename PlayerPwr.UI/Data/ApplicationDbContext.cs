@@ -17,5 +17,14 @@ namespace PlayerPwr.UI.Data
             IOptions<OperationalStoreOptions> operationalStoreOptions) : base(options, operationalStoreOptions)
         {
         }
+
+        public DbSet<Character> Characters { get; set; }
+        public DbSet<Rating> Ratings { get; set; }
+        public DbSet<Realm> Realms { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+        }
     }
 }
