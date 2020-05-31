@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PlayerPwr.UI.Models
+namespace PlayerPwr.Engine.Models
 {
     public class Realm
     {
@@ -15,8 +15,6 @@ namespace PlayerPwr.UI.Models
 
         public int Id { get; set; }
 
-        [Required]
-        [StringLength(40)]
         public string Name { get; set; }
 
         public ICollection<Character> Characters { get; set; }

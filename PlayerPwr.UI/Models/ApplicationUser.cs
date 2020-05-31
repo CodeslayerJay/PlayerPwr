@@ -8,5 +8,7 @@ namespace PlayerPwr.UI.Models
 {
     public class ApplicationUser : IdentityUser
     {
+       
+     
     }
 }
